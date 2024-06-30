@@ -1,0 +1,102 @@
+{
+	"id": "b304a95b-c6dc-4f06-85dd-aa27853cd2eb",
+	"prevId": "58268137-e6e8-4cf0-a53a-54be2e8a7abf",
+	"version": "6",
+	"dialect": "postgresql",
+	"tables": {
+		"public.txn_table": {
+			"name": "txn_table",
+			"schema": "",
+			"columns": {
+				"amount": {
+					"name": "amount",
+					"type": "numeric",
+					"primaryKey": false,
+					"notNull": true
+				},
+				"user_id": {
+					"name": "user_id",
+					"type": "serial",
+					"primaryKey": false,
+					"notNull": true
+				},
+				"created_at": {
+					"name": "created_at",
+					"type": "timestamp",
+					"primaryKey": false,
+					"notNull": true,
+					"default": "now()"
+				},
+				"updated_at": {
+					"name": "updated_at",
+					"type": "timestamp",
+					"primaryKey": false,
+					"notNull": true,
+					"default": "now()"
+				},
+				"txn_id": {
+					"name": "txn_id",
+					"type": "serial",
+					"primaryKey": true,
+					"notNull": true
+				},
+				"split_check": {
+					"name": "split_check",
+					"type": "boolean",
+					"primaryKey": false,
+					"notNull": true,
+					"default": false
+				}
+			},
+			"indexes": {},
+			"foreignKeys": {
+				"txn_table_user_id_user_table_id_fk": {
+					"name": "txn_table_user_id_user_table_id_fk",
+					"tableFrom": "txn_table",
+					"tableTo": "user_table",
+					"columnsFrom": ["user_id"],
+					"columnsTo": ["id"],
+					"onDelete": "cascade",
+					"onUpdate": "cascade"
+				}
+			},
+			"compositePrimaryKeys": {},
+			"uniqueConstraints": {}
+		},
+		"public.user_table": {
+			"name": "user_table",
+			"schema": "",
+			"columns": {
+				"id": {
+					"name": "id",
+					"type": "serial",
+					"primaryKey": true,
+					"notNull": true
+				},
+				"password_hash": {
+					"name": "password_hash",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": true
+				},
+				"email": {
+					"name": "email",
+					"type": "text",
+					"primaryKey": false,
+					"notNull": true
+				}
+			},
+			"indexes": {},
+			"foreignKeys": {},
+			"compositePrimaryKeys": {},
+			"uniqueConstraints": {}
+		}
+	},
+	"enums": {},
+	"schemas": {},
+	"_meta": {
+		"columns": {},
+		"schemas": {},
+		"tables": {}
+	}
+}

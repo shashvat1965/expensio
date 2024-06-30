@@ -1,0 +1,20 @@
+{
+	"license": "MIT",
+	"scripts": {
+		"dev": "wrangler dev src/index.ts",
+		"deploy": "wrangler deploy --minify src/index.ts"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"drizzle-orm": "^0.30.10",
+		"hono": "^4.3.10",
+		"postgres": "^3.4.4",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@cloudflare/workers-types": "^4.20240403.0",
+		"drizzle-kit": "^0.21.4",
+		"wrangler": "^3.47.0"
+	}
+}

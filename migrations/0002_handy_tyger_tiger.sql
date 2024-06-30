@@ -1,0 +1,1 @@
+ALTER TABLE "txn_table" ADD COLUMN "split_check" boolean DEFAULT false NOT NULL;

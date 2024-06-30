@@ -1,0 +1,1 @@
+ALTER TABLE "user_table" ADD COLUMN "total_spend" numeric DEFAULT '0' NOT NULL;
