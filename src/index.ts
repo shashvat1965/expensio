@@ -1,7 +1,6 @@
 import { cors } from "hono/cors";
 import { userRouter } from "./routes/user_routes";
 import { txnRouter } from "./routes/txn_routes";
-import { createFactory } from "hono/factory";
 import { Hono } from "hono";
 
 const app = new Hono();
