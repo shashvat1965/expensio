@@ -1,0 +1,1 @@
+ALTER TABLE "txn_table" DROP COLUMN IF EXISTS "split_check";

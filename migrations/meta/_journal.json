@@ -1,41 +1,69 @@
 {
-	"version": "6",
-	"dialect": "postgresql",
-	"entries": [
-		{
-			"idx": 0,
-			"version": "6",
-			"when": 1716641414822,
-			"tag": "0000_easy_magma",
-			"breakpoints": true
-		},
-		{
-			"idx": 1,
-			"version": "6",
-			"when": 1716641786584,
-			"tag": "0001_amazing_purifiers",
-			"breakpoints": true
-		},
-		{
-			"idx": 2,
-			"version": "6",
-			"when": 1717182772075,
-			"tag": "0002_handy_tyger_tiger",
-			"breakpoints": true
-		},
-		{
-			"idx": 3,
-			"version": "6",
-			"when": 1717618851924,
-			"tag": "0003_boring_molten_man",
-			"breakpoints": true
-		},
-		{
-			"idx": 4,
-			"version": "6",
-			"when": 1717619062588,
-			"tag": "0004_messy_namor",
-			"breakpoints": true
-		}
-	]
+  "version": "6",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1716641414822,
+      "tag": "0000_easy_magma",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1716641786584,
+      "tag": "0001_amazing_purifiers",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1717182772075,
+      "tag": "0002_handy_tyger_tiger",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1717618851924,
+      "tag": "0003_boring_molten_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1717619062588,
+      "tag": "0004_messy_namor",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1723376171301,
+      "tag": "0005_colossal_spot",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1723378301144,
+      "tag": "0006_silky_tomorrow_man",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1723378658435,
+      "tag": "0007_amused_lord_tyger",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1723378850737,
+      "tag": "0008_strong_gunslinger",
+      "breakpoints": true
+    }
+  ]
 }
